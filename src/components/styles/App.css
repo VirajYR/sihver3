@@ -1,0 +1,61 @@
+.app {
+    text-align: center;
+ 
+    /* margin: 0 200px 0 200px; */
+    margin-left: 285px;
+  }
+  
+  .app-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  .app-header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .app-header h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row; /* Ensures that the items are side by side */
+    justify-content: space-between; /* Add space between the map and danger zone list */
+  }
+  
+  .map-container {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    /* margin-bottom: 100px; */
+    margin: 10px 0 100px 0;
+  }
+  
+  .danger-zone-list {
+    width: 30%;
+    /* padding: 20px; */
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .flex {
+      flex-direction: column; /* Stack components vertically on smaller screens */
+    }
+  
+    .map-container {
+      height: 300px;
+      width: 100%;
+    }
+  
+    .danger-zone-list {
+      width: 100%;
+      padding: 10px;
+      /* margin-right: 50px; */
+    }
+  }
+  

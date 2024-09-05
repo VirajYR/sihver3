@@ -1,0 +1,9 @@
+.DangerList{
+    width: 100%;
+    /* margin-right: 110px; */
+
+    box-sizing: border-box;
+}
+.DangerList li{
+    font-size: 16px;
+}
